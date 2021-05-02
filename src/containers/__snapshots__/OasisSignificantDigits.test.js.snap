@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) OasisSignificantDigits should render 1`] = `
+<Manager>
+  <Reference />
+</Manager>
+`;
+
+exports[`(Container) OasisSignificantDigits will receive right actions 1`] = `
+Object {
+  "actions": Object {},
+}
+`;
+
+exports[`(Container) OasisSignificantDigits will receive right props 1`] = `Object {}`;

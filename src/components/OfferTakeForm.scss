@@ -1,0 +1,10 @@
+@import "../styles/modules/typography";
+
+.errorMessage {
+  @include muted();
+
+  padding: 2px 13px;
+}
+
+[disabled] {
+}

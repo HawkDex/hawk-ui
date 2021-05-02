@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisChart should render 1`] = `
+<OasisWidgetFrame
+  className=""
+  heading="Charts"
+  headingChildren={
+    <OasisSelect
+      className={undefined}
+      onChange={[Function]}
+      size="md"
+      value="PRICE"
+    >
+      <option>
+        PRICE
+      </option>
+      <option>
+        VOLUME
+      </option>
+      <option>
+        DEPTH
+      </option>
+    </OasisSelect>
+  }
+  isLoadingData={true}
+  loadingDataText="loading trades"
+  noContentPaddingXXS={true}
+  spaceForContent={true}
+>
+  <Connect(OasisChartPrice)
+    tradingPair={
+      Object {
+        "baseToken": "MKR",
+        "quoteToken": "DAI",
+      }
+    }
+  />
+</OasisWidgetFrame>
+`;

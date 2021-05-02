@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) OasisMessagesSection should render 1`] = `
+<OasisMessage
+  dismissible={false}
+  heading="Loading Messages..."
+  type="MSGTYPE_INFO"
+>
+  <span
+    hidden={true}
+  />
+</OasisMessage>
+`;
+
+exports[`(Container) OasisMessagesSection will receive right actions 1`] = `
+Object {
+  "actions": Object {},
+}
+`;
+
+exports[`(Container) OasisMessagesSection will receive right props 1`] = `
+Object {
+  "isSessionInitialized": undefined,
+  "messages": Object {
+    "MSGTYPE_INFO": Object {
+      "dismissed": false,
+    },
+    "MSGTYPE_WARNING": Object {},
+  },
+}
+`;

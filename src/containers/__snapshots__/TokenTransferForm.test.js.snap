@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) TokenTransferForm should render 1`] = `
+<form
+  method="POST"
+  onChange={[Function]}
+>
+  <table
+    className="undefined undefined"
+  >
+    <thead>
+      <tr>
+        <td />
+        <td />
+        <td />
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>
+          Recipient
+        </th>
+        <td
+          colSpan="2"
+        >
+          <Connect(EthereumAddressInputField)
+            fieldName="recipient"
+            onValidityChange={[Function]}
+            required={true}
+          />
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Amount
+        </th>
+        <td
+          className="undefined"
+        >
+          <div>
+            <OasisButton
+              btnType="button"
+              color="default"
+              hidden={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              size="xs"
+              type="button"
+            >
+              <span>
+                <span
+                  className="d-none d-sm-block"
+                >
+                  transfer
+                </span>
+                 max
+              </span>
+            </OasisButton>
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <Connect(TokenAmountInputField)
+                fieldName="tokenAmount"
+                onValidityChange={[Function]}
+              />
+            </div>
+            <Field
+              component="input"
+              disabled={true}
+              hidden={true}
+              name="token"
+              type="text"
+            />
+          </div>
+        </td>
+        <td>
+          MKR
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <div />
+    <OasisButton
+      btnType="button"
+      color="default"
+      disabled={true}
+      size="md"
+      type="submit"
+    >
+      Transfer
+    </OasisButton>
+  </div>
+</form>
+`;
+
+exports[`(Container) TokenTransferForm will receive right actions 1`] = `
+Object {
+  "actions": Object {
+    "transferMax": [Function],
+  },
+}
+`;
+
+exports[`(Container) TokenTransferForm will receive right props 1`] = `
+Object {
+  "globalFormLock": undefined,
+  "selectedToken": "MKR",
+}
+`;

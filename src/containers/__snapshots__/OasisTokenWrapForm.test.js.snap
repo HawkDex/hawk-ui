@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) OasisTokenWrapForm should render 1`] = `
+<form
+  onChange={[Function]}
+>
+  <table
+    className="undefined undefined"
+  >
+    <tbody>
+      <tr>
+        <th>
+          Amount
+        </th>
+        <td>
+          <div>
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <Field
+                autoComplete="off"
+                component={[Function]}
+                name="amount"
+                placeholder={0}
+                required={true}
+                style={
+                  Object {
+                    "textAlign": "right",
+                    "width": "100%",
+                  }
+                }
+                validate={[Function]}
+              />
+            </div>
+          </div>
+        </td>
+        <td />
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <OasisTransactionStatusWrapperInfoBox
+      infoText={[Function]}
+      localStatus="TX/STATUS_AWAITING_CONFIRMATION"
+      txStatus="TX/STATUS_AWAITING_CONFIRMATION"
+      txTimestamp={1}
+    />
+  </div>
+  <div>
+    <div />
+    <OasisButton
+      btnType="button"
+      color="default"
+      disabled={true}
+      size="md"
+      type="submit"
+    >
+      Wrap
+    </OasisButton>
+  </div>
+</form>
+`;
+
+exports[`(Container) OasisTokenWrapForm will receive right actions 1`] = `
+Object {
+  "actions": Object {
+    "setWrapMax": [Function],
+  },
+}
+`;
+
+exports[`(Container) OasisTokenWrapForm will receive right props 1`] = `
+Object {
+  "activeUnwrappedTokenBalance": "0",
+  "globalFormLock": undefined,
+  "wrapTokenAmount": undefined,
+}
+`;

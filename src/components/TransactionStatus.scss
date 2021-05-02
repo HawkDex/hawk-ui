@@ -1,0 +1,25 @@
+@import "../styles/modules/breakpoints";
+
+.base {}
+
+.imgRight {
+  margin-left: 0.5em;
+}
+
+.imgLeft {
+  margin-right: 0.5em;
+}
+
+.spaceBoth {
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+.transactionFailedHash {
+  display: inline-block;
+  max-width: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @media (max-width: $xxs) {
+    max-width: 35px;
+  }
+}

@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) OasisTakeOfferModal should render 1`] = `
+<Modal
+  ariaHideApp={false}
+  bodyOpenClassName="ReactModal__Body--open"
+  closeTimeoutMS={0}
+  isOpen={true}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <h4>
+    Buy offer
+  </h4>
+  <button
+    onClick={[Function]}
+  >
+    <span>
+      ×
+    </span>
+  </button>
+  <OasisTokenBalance
+    className=""
+    summary="Available"
+  />
+  <div>
+    <div>
+      <Connect(ReduxForm)
+        estimateGas={[Function]}
+        onFormChange={[Function]}
+      />
+    </div>
+    <div
+      className="statusSection"
+    >
+      <div>
+        <div>
+          <div>
+            <Connect(OasisOfferSummary)
+              disableBalanceWarning={false}
+              offerType="OFFER_TAKES/TAKE_BUY_OFFER"
+            />
+          </div>
+          <div />
+        </div>
+      </div>
+      <div />
+    </div>
+    <div>
+      <OasisButton
+        btnType="button"
+        color="default"
+        disabled={false}
+        onClick={[Function]}
+        size="md"
+      >
+        Cancel
+      </OasisButton>
+      <div
+        className="notificationsSection"
+      />
+      <OasisButton
+        btnType="button"
+        color="success"
+        disabled={true}
+        onClick={[Function]}
+        size="md"
+      >
+        Sell undefined
+      </OasisButton>
+    </div>
+  </div>
+</Modal>
+`;
+
+exports[`(Container) OasisTakeOfferModal will receive right actions 1`] = `
+Object {
+  "actions": Object {
+    "checkIfOfferIsActive": [Function],
+    "getTransactionGasCostEstimate": [Function],
+    "setOfferTakeModalClosed": [Function],
+    "takeOffer": [Function],
+  },
+}
+`;
+
+exports[`(Container) OasisTakeOfferModal will receive right props 1`] = `
+Object {
+  "activeMarketAddress": "0x8cf1cab422a0b6b554077a361f8419cdf122a9f9",
+  "buyToken": undefined,
+  "canFulfillOffer": false,
+  "hasExceededGasLimit": false,
+  "hasSufficientTokenAmount": false,
+  "isCurrentOfferActive": true,
+  "isOfferTakeModalOpen": true,
+  "isTokenTradingEnabled": false,
+  "isVolumeGreaterThanOfferMax": false,
+  "latestBlockNumber": 6716998,
+  "sellToken": undefined,
+}
+`;

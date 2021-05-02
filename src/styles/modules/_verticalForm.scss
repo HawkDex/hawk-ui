@@ -1,0 +1,86 @@
+@import "./breakpoints";
+@import "./constants";
+@import "./typography";
+
+@mixin verticalFormTable {
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border: solid #EFEFEF 1px;
+  border-radius: 6px;
+  table-layout: fixed;
+
+  th {
+    color: #818181;
+    background-color: $table-header-bg;
+    border-left: 1px $table-border solid;
+    border-top: 1px $table-border solid;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+    width: 80px;
+
+    text-transform: uppercase;
+    @media (max-width: $xxs) {
+      font-size: 12px;
+      padding: 5px;
+      width: 70px;
+    }
+  }
+
+  td {
+    border-top: 1px $table-border solid;
+    border-left: 1px $table-border solid;
+  }
+
+  tr:first-child th,
+  tr:first-child td {
+    border-top: none;
+  }
+
+  td:first-child,
+  th:first-child {
+    border-left: none;
+  }
+
+}
+
+@mixin tdWithInput {
+  padding:0;
+
+  input {
+    width: calc(100% - 2px);
+    margin-left: 1px;
+    margin-right: 1px;
+    @include mainInput;
+    //font-family: 'Roboto', sans-serif;
+    //font-size: 19px;
+    //font-weight: 500;
+    //color: #68686C;
+    border: none;
+    //text-align: right;
+    //padding-right: 10px;
+    max-width: 100%;
+    //background: none;
+    @media (max-width: $xxxs) {
+      font-size: 15px;
+    }
+
+    &::placeholder {
+      color: rgba(104,104,108,0.4);
+    }
+  }
+}
+
+
+@mixin tdWithInputGroup {
+  @include tdWithInput;
+
+  //& > div {
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //  width: 100%;
+  //}
+}

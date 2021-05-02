@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisDontWrapAllEther should render 1`] = `
+<InfoBoxWithIco
+  alignItems="center"
+  color="danger"
+  icon="warning"
+>
+  <span>
+    Do not wrap all of your 
+    <b>
+      ETH
+    </b>
+    !
+  </span>
+</InfoBoxWithIco>
+`;

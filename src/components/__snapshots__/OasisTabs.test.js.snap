@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisTabs should render 1`] = `
+<div>
+  <ul>
+    <li
+      className="undefined "
+    >
+      <NavLink
+        activeClassName="active"
+        aria-current="page"
+        to="/trade/W-ETH/DAI"
+      >
+        Trade
+      </NavLink>
+    </li>
+    <li
+      className="undefined undefined "
+    >
+      <NavLink
+        activeClassName="active"
+        aria-current="page"
+        to="/wrap-unwrap"
+      >
+        Wrap / Unwrap
+      </NavLink>
+    </li>
+    <li
+      className="undefined "
+    >
+      <NavLink
+        activeClassName="active"
+        aria-current="page"
+        to="/transfer"
+      >
+        Transfer
+      </NavLink>
+    </li>
+  </ul>
+</div>
+`;

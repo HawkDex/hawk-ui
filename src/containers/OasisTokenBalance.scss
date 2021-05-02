@@ -1,0 +1,36 @@
+@import "../styles/modules/breakpoints";
+@import "../styles/modules/typography";
+
+.available {
+  display: inline-block;
+  float: right;
+  @media (max-width: $xxs) {
+    margin-top: 4px;
+  }
+  @media (max-width: $xxxs) {
+    margin-top: 2px;
+  }
+}
+
+.available-amount {
+  @include mainInput;
+  display: inline-block;
+  @media (max-width: $xxs) {
+    font-size: 16px;
+  }
+  @media (max-width: $xxs) {
+    font-size: 14px;
+  }
+  @media (max-width: $xxxs) {
+    font-size: 12px;
+  }
+}
+
+.available-currency {
+  @include currency;
+  display: inline-block;
+}
+
+.loading {
+  float: right;
+}

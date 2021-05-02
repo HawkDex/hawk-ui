@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) OasisOfferBelowDustLimit should render 1`] = `""`;
+
+exports[`(Container) OasisOfferBelowDustLimit will receive right actions 1`] = `
+Object {
+  "actions": Object {},
+}
+`;
+
+exports[`(Container) OasisOfferBelowDustLimit will receive right props 1`] = `
+Object {
+  "isOfferBelowLimit": false,
+  "tokenMinLimit": "0",
+}
+`;

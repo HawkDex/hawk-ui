@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisMarketHistory should render 1`] = `
+<OasisWidgetFrame
+  className=""
+  heading="MARKET HISTORY"
+  isLoadingData={true}
+  loadProgressSection={<OasisLoadingIndicator />}
+  loadingDataText="loading trades history"
+>
+  <OasisTable
+    col={
+      Array [
+        Object {
+          "heading": "date",
+          "key": "date",
+        },
+        Object {
+          "heading": "action",
+          "key": "tradeType",
+        },
+        Object {
+          "heading": "price",
+          "template": [Function],
+        },
+        Object {
+          "heading": "W-ETH",
+          "template": [Function],
+        },
+        Object {
+          "heading": "MKR",
+          "template": [Function],
+        },
+      ]
+    }
+    collapseEnabled={false}
+    collapseInitial={false}
+    collapseRowNumber={4}
+    metadata={
+      Object {
+        "activeNetworkName": undefined,
+      }
+    }
+    onRowClick={[Function]}
+    rowHoverText=""
+    rows={Array []}
+  />
+</OasisWidgetFrame>
+`;

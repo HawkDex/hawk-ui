@@ -1,0 +1,159 @@
+@import "../styles/modules/breakpoints";
+@import "../styles/modules/constants";
+
+.NoEthereumSection {
+  max-width: 980px;
+  margin: 0 auto;
+  @media (max-width: $xxs) {
+    max-width: 100%;
+  }
+
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: $blue-darkish;
+  font-size: 24px;
+
+  h2 {
+    max-width: 100%;
+    font-weight: 700;
+    opacity: 0.8;
+    color: #222228;
+  }
+
+  .ImgHeaderLogo {
+    width: 264px;
+    padding-bottom: 30px;
+  }
+
+  .ImgEthereumLogo {
+    width: 61px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .HorizontalLine {
+    color: $lightgray;
+    border: 0;
+    border-top: solid 1px $lightgray;
+  }
+
+  .PNotFound {
+    opacity: 0.50;
+    width: 925px;
+    @media (min-width: $xxs) and (max-width: $lg) {
+      max-width: 100% !important;
+    }
+    @media (max-width: $xxs) {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    letter-spacing: 0.6px;
+  }
+
+  .PUseClients {
+    display: inline-block;
+    color: #546979;
+    font-weight: 700;
+    @media (max-width: $xxs) {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  }
+
+  .PConnectGeth {
+    opacity: 1;
+    width: 925px;
+    color: #4F5362;
+    display: inline-block;
+    letter-spacing: 0.6px;
+    @media (max-width: $xxs) {
+      padding: 0 10px;
+    }
+    max-width: 100%;
+  }
+
+  .DivClients {
+    color: $gray-blueish;
+    display: flex;
+    font-size: 15px;
+    height: 360px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    @media (max-width: $xxs) {
+      max-width: 100%;
+      padding: 0 10px;
+      height: auto;
+      flex-wrap: wrap;
+      > div:first-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .DivMetamask,
+  .DivMist,
+  .DivCoinbaseWallet {
+    padding: 30px 20px;
+    background-color: white;
+    width: 340px;
+    height: 360px;
+    opacity: 0.89;
+    border: 2px solid #EFF1F3;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.13);
+    border-radius: 4px;
+    margin: 0 20px;
+
+    h2 {
+      font-size: 17px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      display: table;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .ImgLogo {
+      width: 85px;
+    }
+
+    .SpanMontserratSemiBold {
+      font-weight: 700;
+      font-size: 15px;
+      color: #4F5362;
+    }
+
+    .NumberCircle {
+      display: inline-block;
+      border-radius: 50%;
+      height: 25px;
+      width: 25px;
+      line-height: 22px;
+      text-indent: 1px;
+      -moz-border-radius: 50%;
+      text-align: center;
+      border: solid 1px #CFD8DC;
+      font-size: 12px;
+      vertical-align: middle;
+      color: #222228;
+      opacity: 0.68;
+    }
+
+    .AlignNumber {
+      display: table-cell;
+      vertical-align: middle;
+      padding-right: 20px;
+    }
+
+    .ALink {
+      color: #337ab7;
+    }
+  }
+}

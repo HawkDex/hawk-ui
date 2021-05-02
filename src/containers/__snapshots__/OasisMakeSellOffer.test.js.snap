@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) OasisMakeSellOffer should render 1`] = `
+<OasisWidgetFrame
+  className=""
+  heading="Sell MKR"
+  spaceForContent={true}
+>
+  <OasisTokenBalance
+    className=""
+    summary="Available"
+    token="MKR"
+  />
+  <div>
+    <Connect(ReduxForm)
+      baseToken="MKR"
+      form="makeSellOffer"
+      offerMakeType="OFFER_MAKES/MAKE_SELL_OFFER"
+      quoteToken="DAI"
+      shouldFormUpdate={true}
+    />
+  </div>
+  <div>
+    <div>
+      <OasisInsufficientAmountOfToken
+        noBorder={true}
+        tokenName="MKR"
+      />
+      <InfoBox
+        className=""
+        color="muted"
+        hidden={true}
+        noBorder={true}
+        size="md"
+      >
+        Enter a price to unlock amount and total.
+      </InfoBox>
+    </div>
+    <OasisButton
+      btnType="button"
+      color="danger"
+      disabled="true"
+      onClick={[Function]}
+      size="md"
+    >
+      Sell
+    </OasisButton>
+  </div>
+</OasisWidgetFrame>
+`;
+
+exports[`(Container) OasisMakeSellOffer will receive right actions 1`] = `
+Object {
+  "actions": Object {
+    "initializeOfferMake": [Function],
+    "makeOfferModalOpen": [Function],
+  },
+}
+`;
+
+exports[`(Container) OasisMakeSellOffer will receive right props 1`] = `
+Object {
+  "activeTradingPair": Object {
+    "baseToken": "MKR",
+    "quoteToken": "DAI",
+  },
+  "canMakeOffer": false,
+  "contractsLoaded": true,
+  "globalFormLock": undefined,
+  "hasSufficientTokenAmount": false,
+  "isModalOpen": false,
+  "isPriceSet": true,
+  "isTotalOverTheTokenMax": undefined,
+  "isVolumeEmptyOrZero": false,
+}
+`;

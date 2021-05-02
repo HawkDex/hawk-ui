@@ -1,0 +1,23 @@
+@import "./../styles/modules/breakpoints";
+
+.OasisLogoWrapper {
+  display: flex;
+  align-items: center;
+  width: 103px;
+  height: 103px;
+}
+
+.OasisLogo {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background: url("./../assets/hawk-logo.png") no-repeat;
+  background-size: 100%;
+
+  @media (max-width: $xxs) {
+    background-size: 91%;
+  }
+  @media (max-width: $xxxs) {
+    background-size: 80%;
+  }
+}

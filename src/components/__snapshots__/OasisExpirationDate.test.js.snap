@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisExpirationDate should render 1`] = `
+<div
+  styleName="ClosingTime"
+>
+  <div>
+     CLOSING TIME 
+  </div>
+  <div
+    styleName="Date"
+  >
+    11-9-2018
+  </div>
+</div>
+`;

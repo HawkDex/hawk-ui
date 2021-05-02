@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) OasisTokenBalance should render 1`] = `
+<div>
+  <span>
+    0.00000
+  </span>
+  <span />
+</div>
+`;
+
+exports[`(Container) OasisTokenBalance will receive right actions 1`] = `
+Object {
+  "actions": Object {},
+}
+`;
+
+exports[`(Container) OasisTokenBalance will receive right props 1`] = `
+Object {
+  "balance": "0",
+}
+`;

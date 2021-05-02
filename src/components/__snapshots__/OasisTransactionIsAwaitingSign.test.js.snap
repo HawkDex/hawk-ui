@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisTransactionIsAwaitingSign should render 1`] = `
+<div>
+  Sign Trans. 
+  <StatusPictogram
+    className=""
+    status="TX/STATUS_AWAITING_USER_ACCEPTANCE"
+  />
+</div>
+`;

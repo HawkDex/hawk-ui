@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisMarket should render 1`] = `
+<div
+  styleName="OasisMarket"
+>
+  <span
+    styleName="label"
+  >
+     Market: 
+  </span>
+  <div
+    styleName="OasisMarketAddress"
+  >
+    <a
+      href="https://kovan.etherscan.io/address/0x1234"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      0x1234
+    </a>
+  </div>
+</div>
+`;

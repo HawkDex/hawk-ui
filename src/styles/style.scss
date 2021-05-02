@@ -1,0 +1,160 @@
+@import url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+@import "./modules/breakpoints";
+/* COLOURS */
+$background-color: #f8f7f5;
+$color-quote-currency: #795548;
+$color-base-currency: #8d86c9;
+$color-buy: #26a69a;
+$color-sell: #ef5350;
+$color-more: #4f5362;
+$color-allowance: #4f5362;
+$color-cancel: #a8acb9;
+$border-more: #a8acb9;
+$color-place-order: #4f5362;
+$color-cancel-order: #a8acb9;
+
+/* CUSTOM SCROLLBAR TABLE SCROLLING */
+
+.t-scroll tbody::-webkit-scrollbar {
+  width: 8px;
+}
+
+.t-scroll tbody::-webkit-scrollbar-track {
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.t-scroll tbody::-webkit-scrollbar-thumb {
+  background-color: #eeeeee;
+  border-radius: 5.5px;
+}
+/* MIXIN TABLE SCROLLING */
+@mixin quantity-query( $number, $comparison: "equal" ) {
+  $nth: "";
+  @if index(("greater" "more" ">"), $comparison) {
+    $nth: "n + #{$number}";
+  } @else if index(("less" "fewer" "<"), $comparison) {
+    $nth: "-n + #{$number}";
+  } @else if index(("equal" "same" "="), $comparison) {
+    $nth: $number;
+  } @else {
+    @warn "Sorry, that's an invalid $comparison value.";
+  }
+  &:nth-last-child(#{$nth}):first-child {
+    &,
+    & ~ * {
+      @content;
+    }
+  }
+}
+
+@mixin qq-equal( $number ) {
+  @include quantity-query($number, equal) {
+    @content;
+  }
+}
+
+@mixin qq-greater( $number ) {
+  @include quantity-query($number, greater) {
+    @content;
+  }
+}
+
+@mixin qq-less( $number ) {
+  @include quantity-query($number, less) {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+/* / MIXIN TABLE SCROLLING */
+
+.full-width {
+  width: 100%;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+// show scrollbar on mac always, and changes style for other webkit too
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+body {
+  background-color: $background-color;
+  margin-top: 40px;
+  @media (max-width: $xxs) {
+    margin-top: 12px;
+    hr {
+    }
+  }
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #222228;
+  letter-spacing: 3.99px;
+}
+
+table {
+  width: 100%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+@media (min-width: $lg) {
+  hr {
+    display: none !important;
+  }
+}
+
+@media (min-width: $xs) and (max-width: $sm) {
+  :global {
+    body {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  }
+}
+
+:global {
+  .ReactModal__Body--open {
+    @media (max-width: $xxs) {
+      overflow-y: hidden !important;
+      max-height: 100vh;
+    }
+  }
+}

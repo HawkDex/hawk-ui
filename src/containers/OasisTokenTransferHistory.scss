@@ -1,0 +1,101 @@
+@import "../styles/modules/breakpoints";
+@import "../styles/modules/typography";
+@import "../styles/modules/grid";
+
+$recipientAddressWidth: 100px;
+$recipientAddressWidthXXS: 40px;
+
+.recipientAddress {
+  @include ellipsis($recipientAddressWidth);
+  @media (max-width: $xxs) {
+    @include ellipsis($recipientAddressWidthXXS);
+  }
+}
+
+.frame {
+  align-self: flex-start;
+}
+
+.table {
+  td,
+  th {
+    text-align: right;
+  }
+
+  td {
+    font-weight: 500;
+  }
+
+  th:first-child,
+  td:first-child {
+    flex-basis: 70px;
+    text-align: right;
+    @media (max-width: $xxs) {
+      flex-basis: 60px;
+    }
+    @media (max-width: $xxxs) {
+      flex-basis: 14% !important;
+    }
+  }
+
+  td:first-child {
+    @include muted;
+  }
+
+  th:nth-child(2),
+  td:nth-child(2) {
+    flex-basis: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    @media (max-width: $xxs) {
+      flex-basis: 35px;
+    }
+    @media (max-width: $xxxs) {
+      flex-basis: 12% !important;
+    }
+  }
+
+  td:first-child {
+   @media (max-width: $xxxs) {
+     line-height: 14px;
+     margin: 2px 0;
+   }
+  }
+  th:nth-child(3),
+  td:nth-child(3) {
+    flex-basis: $recipientAddressWidth;
+    @media (max-width: $xxs) {
+      flex-basis: $recipientAddressWidthXXS;
+    }
+    flex-grow: 0;
+    text-align: left;
+    height: 19px;
+    @media (max-width: $xxxs) {
+      flex-basis: 14%;
+    }
+  }
+
+  th:nth-child(4),
+  td:nth-child(4) {
+    flex-basis: 46px;
+    text-align: center;
+    @media (max-width: $xxs) {
+      flex-basis: 35px;
+    }
+
+    @media (max-width: $xxxs) {
+      flex-basis: 12% !important;
+    }
+  }
+
+  th:nth-child(5),
+  td:nth-child(5) {
+    flex-basis: 58px;
+    text-align: right;
+    @media (max-width: $xxxs) {
+      flex-basis: 15% !important;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../styles/modules/breakpoints";
+@import "../styles/modules/typography";
+
+.available {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.callToAction {
+  float: right;
+  //margin-top: 1.5em;
+  min-width: 100px;
+  @media (max-width: $xxxs) {
+    min-width: 80px;
+  }
+}
+
+.footer {
+  display: flex;
+  margin-top: 17px;
+  align-items: center;
+}
+
+.helpBlock {
+  flex-grow: 1;
+  @include muted();
+  @media (max-width: $xs) {
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

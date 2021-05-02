@@ -1,0 +1,12 @@
+@import "../styles/modules/typography";
+
+.heading {
+  @include heading;
+  margin-bottom: 1em;
+}
+
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}

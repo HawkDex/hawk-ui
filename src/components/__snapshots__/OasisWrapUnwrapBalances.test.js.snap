@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisWrapUnwrapBalances should render 1`] = `
+<OasisWidgetFrame
+  className=""
+  heading="BALANCES"
+>
+  <OasisTable
+    col={
+      Array [
+        Object {
+          "heading": "coin",
+          "key": "unwrappedToken",
+        },
+        Object {
+          "heading": "wallet",
+          "template": [Function],
+        },
+        Object {
+          "heading": "wrapped",
+          "template": [Function],
+        },
+      ]
+    }
+    collapseEnabled={false}
+    collapseInitial={false}
+    collapseRowNumber={4}
+    onRowClick={[Function]}
+    rowHoverText=""
+    rows={Array []}
+  />
+</OasisWidgetFrame>
+`;

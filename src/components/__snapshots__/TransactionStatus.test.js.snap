@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) TransactionStatus should render 1`] = `
+<FlexBox
+  alignContent="stretch"
+  alignItems="baseline"
+  className=""
+  justifyContent="normal"
+  vertical={false}
+  wrap={false}
+>
+  <Connect(EtherscanLink)
+    type="ETHERSCAN_LINK_TYPE_TRANSACTION"
+  />
+  <StatusPictogram
+    className=""
+    status="TX/STATUS_AWAITING_CONFIRMATION"
+  />
+</FlexBox>
+`;

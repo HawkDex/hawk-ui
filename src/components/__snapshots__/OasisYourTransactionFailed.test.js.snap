@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisYourTransactionFailed should render 1`] = `
+<InfoBox
+  className=""
+  color="danger"
+  size="md"
+>
+  <StatusPictogram
+    className=""
+    status="TX/STATUS_REJECTED"
+  />
+  <span>
+    Your transaction
+  </span>
+  <EtherscanLink
+    txHash="0x0"
+    type="ETHERSCAN_LINK_TYPE_TRANSACTION"
+  />
+   has failed
+</InfoBox>
+`;

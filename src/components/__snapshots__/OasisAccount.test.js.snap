@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisAccount should render 1`] = `
+<div
+  styleName="OasisAccount"
+>
+  <span
+    styleName="label"
+  >
+     Account: 
+  </span>
+  <div
+    styleName="AccountSelection"
+  >
+    <select
+      disabled={true}
+    />
+  </div>
+</div>
+`;

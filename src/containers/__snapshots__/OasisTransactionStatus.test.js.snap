@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) OasisTransactionStatus should render 1`] = `
+<InfoBox
+  actions={Object {}}
+  alignItems="baseline"
+  className=""
+  color="default"
+  fullWidth={true}
+  justifyContent="space-between"
+  networkName="kovan"
+  size="sm"
+  txTimestamp={1}
+>
+  <div />
+  <div>
+    <TransactionStatus
+      transaction={
+        Immutable.Map {
+          txType: "OFFER_TAKES/TAKE_BUY_OFFER",
+        }
+      }
+    />
+  </div>
+</InfoBox>
+`;
+
+exports[`(Container) OasisTransactionStatus will receive right actions 1`] = `
+Object {
+  "actions": Object {},
+}
+`;
+
+exports[`(Container) OasisTransactionStatus will receive right props 1`] = `
+Object {
+  "networkName": "kovan",
+  "transaction": Immutable.Map {
+    txStatus: undefined,
+},
+}
+`;

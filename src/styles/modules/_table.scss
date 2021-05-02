@@ -1,0 +1,41 @@
+@import "typography";
+@import "./verticalForm";
+
+.table {
+  @include verticalFormTable;
+}
+
+.withInput {
+  @include tdWithInput;
+}
+
+.currency {
+  @include currency;
+}
+
+// input group in tables
+.inputGroup {
+  display: flex;
+}
+
+// dummy div for onBlur and onFocus,
+// placed directly inside inputGroup, next to button, containing input
+// The structure should look like this:
+// td.withInput
+//     div.inputGroup
+//         button.inputBtn
+//         div.inputGroupEventHandlerChild
+//             input
+.inputGroupEventHandlerChild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.inputBtn {
+  @media (max-width: $xxs) {
+    font-size: 7px;
+  }
+  margin: 5px;
+}

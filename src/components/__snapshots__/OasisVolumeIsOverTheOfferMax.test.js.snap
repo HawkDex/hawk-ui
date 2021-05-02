@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisVolumeIsOverTheOfferMax should render 1`] = `
+<InfoBoxWithIco
+  alignItems="center"
+  color="danger"
+  icon="warning"
+>
+  Current volume is greater than offer maximum of 
+  <b>
+    1,234.000
+     
+    W-GNT
+  </b>
+</InfoBoxWithIco>
+`;

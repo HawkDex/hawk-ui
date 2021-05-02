@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) SetTokenAllowanceTrust should render 1`] = `
+<div
+  hidden={true}
+>
+  <OasisAccordion
+    className=""
+    heading={
+      <FlexBox
+        alignContent="stretch"
+        alignItems="center"
+        className=""
+        justifyContent="space-between"
+        vertical={false}
+        wrap={false}
+      >
+        <div
+          className={undefined}
+        >
+          Enable
+           
+          <b>
+            W-ETH
+          </b>
+           for trading
+        </div>
+        <div
+          onClick={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "cursor": "default",
+              "display": "flex",
+              "minHeight": "24px",
+              "position": "relative",
+              "top": "1px",
+            }
+          }
+          title=""
+        >
+          <Connect(OasisTransactionStatus)
+            localStatus={undefined}
+            noBorder={true}
+            noPadding={true}
+            txTimestamp={undefined}
+            txType="TX/GROUP__LIMITS/TX/ALLOWANCE_TRUST_TOGGLE"
+          />
+        </div>
+        <div
+          hidden={undefined}
+        >
+          <OasisButton
+            btnType="button"
+            color="success"
+            onClick={[Function]}
+            size="md"
+          >
+            Loading
+          </OasisButton>
+        </div>
+      </FlexBox>
+    }
+    infoBoxSize="md"
+    isOpen={false}
+  >
+    <FlexBox
+      alignContent="stretch"
+      alignItems="center"
+      className=""
+      justifyContent="normal"
+      vertical={false}
+      wrap={false}
+    >
+      <OasisIcon
+        className=""
+        icon="idle"
+        size="lg"
+      />
+      <div>
+        You need first grant access to withdraw from your personal account. To disable 
+        W-ETH
+         trading use Allowance widget on the funds page.
+      </div>
+    </FlexBox>
+  </OasisAccordion>
+</div>
+`;
+
+exports[`(Container) SetTokenAllowanceTrust will receive right actions 1`] = `
+Object {
+  "actions": Object {
+    "getDefaultAccountTokenAllowanceForAddress": [Function],
+    "setTokenAllowanceTrustStatus": [Function],
+  },
+}
+`;
+
+exports[`(Container) SetTokenAllowanceTrust will receive right props 1`] = `
+Object {
+  "contractsLoaded": true,
+  "latestBlockNumber": 6716998,
+  "subjectTrustStatus": null,
+}
+`;

@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) OasisMakeOfferModal should render 1`] = `
+<Modal
+  ariaHideApp={false}
+  bodyOpenClassName="ReactModal__Body--open"
+  closeTimeoutMS={0}
+  isOpen={true}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <h4>
+    Buy offer
+  </h4>
+  <button
+    onClick={[Function]}
+  >
+    ×
+  </button>
+  <OasisTokenBalance
+    className=""
+    summary="Available"
+    token="DAI"
+  />
+  <div>
+    <div>
+      <Connect(ReduxForm)
+        offerMakeType="OFFER_MAKES/MAKE_BUY_OFFER"
+        onFormChange={[Function]}
+      />
+      <Connect(OasisOfferSummary)
+        disableBalanceWarning={true}
+        offerType="OFFER_MAKES/MAKE_BUY_OFFER"
+      />
+    </div>
+    <div>
+      <Connect(OasisOfferBelowDustLimit)
+        offerType="OFFER_MAKES/MAKE_BUY_OFFER"
+        tokenName="DAI"
+      />
+      <InfoBoxWithIco
+        alignItems="center"
+        fullWidth={true}
+        hidden={true}
+        icon="info"
+      >
+        Enter a price to unlock amount and total.
+      </InfoBoxWithIco>
+    </div>
+    <OasisTransactionStatusWrapperInfoBox
+      infoText={
+        <strong>
+          Process order
+        </strong>
+      }
+      txType="TRANSACTIONS/GROUP__OFFERS/OFFER_MAKE"
+    />
+    <Connect(SetTokenAllowanceTrust)
+      allowanceSubjectAddress="0x8cf1cab422a0b6b554077a361f8419cdf122a9f9"
+      onCancelCleanup={[Function]}
+      onTransactionCompleted={[Function]}
+      onTransactionPending={[Function]}
+      tokenName="DAI"
+    />
+    <div>
+      <OasisButton
+        btnType="button"
+        color="default"
+        disabled={false}
+        onClick={[Function]}
+        size="md"
+      >
+        Cancel
+      </OasisButton>
+      <OasisButton
+        btnType="button"
+        color="success"
+        disabled={true}
+        onClick={[Function]}
+        size="md"
+      >
+        Buy undefined
+      </OasisButton>
+    </div>
+  </div>
+</Modal>
+`;
+
+exports[`(Container) OasisMakeOfferModal will receive right actions 1`] = `
+Object {
+  "actions": Object {
+    "getTransactionGasCostEstimate": [Function],
+    "makeOffer": [Function],
+    "setOfferMakeModalClosed": [Function],
+  },
+}
+`;
+
+exports[`(Container) OasisMakeOfferModal will receive right props 1`] = `
+Object {
+  "buyToken": "MKR",
+  "canMakeOffer": false,
+  "hasExceededGasLimit": false,
+  "isPriceSet": true,
+  "isTokenTradingEnabled": false,
+  "isTotalOverTheTokenMax": undefined,
+  "marketAddress": "0x8cf1cab422a0b6b554077a361f8419cdf122a9f9",
+  "sellToken": "DAI",
+}
+`;

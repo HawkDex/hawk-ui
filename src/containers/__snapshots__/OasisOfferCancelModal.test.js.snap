@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) OasisOfferCancelModal should render 1`] = `
+<div>
+  <OasisOfferCancelModal
+    askForConfirmToClose={false}
+    canOfferBeCancelled={false}
+    onCancelOffer={[Function]}
+    onModalClose={[Function]}
+  />
+</div>
+`;
+
+exports[`(Container) OasisOfferCancelModal will receive right actions 1`] = `
+Object {
+  "actions": Object {
+    "cancelOffer": [Function],
+    "markOfferAsInactive": [Function],
+  },
+}
+`;
+
+exports[`(Container) OasisOfferCancelModal will receive right props 1`] = `
+Object {
+  "activeTradingPair": Object {
+    "baseToken": "MKR",
+    "quoteToken": "DAI",
+  },
+  "canOfferBeCancelled": false,
+  "latestBlockNumber": 6716998,
+}
+`;

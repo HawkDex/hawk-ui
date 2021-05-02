@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) TokenAmountInput should render 1`] = `
+<div>
+  <MaskedTokenAmountInput
+    meta={Object {}}
+    selectedToken="MKR"
+    showInlineWarning={false}
+  />
+</div>
+`;

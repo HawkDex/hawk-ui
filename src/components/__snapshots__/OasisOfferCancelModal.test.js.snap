@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisOfferCancelModal should render 1`] = `
+<Modal
+  ariaHideApp={false}
+  bodyOpenClassName="ReactModal__Body--open"
+  closeTimeoutMS={0}
+  isOpen={true}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <div>
+    <div>
+      <h4>
+        Cancel Offer
+      </h4>
+      <button
+        onClick={[Function]}
+      >
+        ×
+      </button>
+    </div>
+    <div>
+      <OasisCantCancelOffer />
+    </div>
+    <div>
+      <OasisTransactionStatusWrapperInfoBox
+        infoText={
+          <strong>
+            Cancel offer
+          </strong>
+        }
+        txType="TRANSACTIONS/GROUP__OFFERS/OFFER_CANCEL"
+      />
+    </div>
+    <div>
+      <OasisButton
+        btnType="button"
+        caption="Close"
+        color="default"
+        disabled={false}
+        onClick={[Function]}
+        size="md"
+      />
+      <OasisButton
+        btnType="button"
+        caption="Cancel offer"
+        color="danger"
+        disabled={true}
+        onClick={[Function]}
+        size="md"
+      />
+    </div>
+  </div>
+</Modal>
+`;

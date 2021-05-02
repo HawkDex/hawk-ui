@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisMyOrders should render 1`] = `
+<OasisWidgetFrame
+  className=""
+  heading="MY ORDERS"
+  headingChildren={
+    <OasisSelect
+      className={undefined}
+      onChange={[Function]}
+      size="md"
+      value="Open"
+    >
+      <option
+        value="Open"
+      >
+        Open
+      </option>
+      <option
+        value="Closed"
+      >
+        Closed
+      </option>
+    </OasisSelect>
+  }
+  isLoadingData={true}
+  loadingDataText="Your active orders"
+>
+  <div>
+    <div>
+      <OasisTable
+        col={
+          Array [
+            Object {
+              "heading": "action",
+              "key": "tradeTypeEl",
+            },
+            Object {
+              "heading": "price",
+              "template": [Function],
+            },
+            Object {
+              "heading": "W-ETH",
+              "template": [Function],
+            },
+            Object {
+              "heading": "MKR",
+              "template": [Function],
+            },
+            Object {
+              "heading": "",
+              "template": [Function],
+            },
+          ]
+        }
+        collapseEnabled={false}
+        collapseInitial={false}
+        collapseRowNumber={4}
+        emptyFallback={
+          <div
+            className={undefined}
+          />
+        }
+        metadata={
+          Object {
+            "activeNetworkName": undefined,
+          }
+        }
+        rowHoverText=""
+        rows={Array []}
+      />
+    </div>
+  </div>
+</OasisWidgetFrame>
+`;

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) OasisNotTheBestOfferPriceWarning should render 1`] = `
+<InfoBoxWithIco
+  alignItems="center"
+  color="danger"
+  icon="warning"
+>
+  WARNING: You have not chosen the best price available. Review the order book to find a better trade.
+</InfoBoxWithIco>
+`;
+
+exports[`(Container) OasisNotTheBestOfferPriceWarning will receive right actions 1`] = `
+Object {
+  "actions": Object {},
+}
+`;
+
+exports[`(Container) OasisNotTheBestOfferPriceWarning will receive right props 1`] = `
+Object {
+  "bestBuyOfferId": "377",
+  "bestSellOfferId": "7",
+  "isBestOffer": false,
+}
+`;

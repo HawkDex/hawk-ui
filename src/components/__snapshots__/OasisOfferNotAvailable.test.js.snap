@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisOfferNotAvailable should render 1`] = `
+<InfoBoxWithIco
+  alignItems="center"
+  color="danger"
+  icon="failed"
+>
+  This order is 
+  <b>
+    not available anymore
+  </b>
+</InfoBoxWithIco>
+`;

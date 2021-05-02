@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisWrapUnwrapWrap should render 1`] = `
+<OasisWidgetFrame
+  className=""
+  heading="Wrap"
+  hidden={false}
+  spaceForContent={true}
+>
+  <OasisTokenBalance
+    className=""
+    summary="Wallet"
+  >
+    <Connect(OasisTokenBalance)
+      decimalPlaces={5}
+    />
+  </OasisTokenBalance>
+  <Connect(ReduxForm)
+    onFormChange={[Function]}
+    onSubmit={[Function]}
+    transactionState={
+      Object {
+        "txStatus": true,
+      }
+    }
+  />
+  <WrapUnwrapStatus
+    type="wrap"
+  />
+</OasisWidgetFrame>
+`;

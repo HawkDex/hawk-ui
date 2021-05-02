@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) Locked should render 1`] = `
+<section>
+  <hr />
+  <h2>
+     account locked
+  </h2>
+  <p>
+    You are trying to access OasisDEX without an unlocked account.
+    <br />
+    Unlock your account on the 
+    .
+  </p>
+  <hr />
+  <Connect(OasisFooterWrapper) />
+</section>
+`;

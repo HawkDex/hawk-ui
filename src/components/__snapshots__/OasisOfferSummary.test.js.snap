@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisOfferSummary should render 1`] = `
+<div>
+  <InfoBox
+    className=""
+    color="default"
+    size="md"
+    wrapXXS={true}
+  >
+    <OasisSoldReceivedAmounts
+      amountReceived="1"
+      amountSold="1"
+      buyToken="W-ETH"
+      sellToken="MKR"
+    />
+    <div>
+      <div
+        style={
+          Object {
+            "marginBottom": "4px",
+          }
+        }
+      >
+        <OasisIcon
+          className=""
+          icon="loading"
+          size="lg"
+        />
+        <span
+          style={
+            Object {
+              "display": "inline-block",
+              "marginLeft": "5px",
+            }
+          }
+        >
+          Loading market contracts...
+        </span>
+      </div>
+      <Connect(OasisGasPrice) />
+    </div>
+  </InfoBox>
+</div>
+`;

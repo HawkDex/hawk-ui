@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) OasisLogo should render 1`] = `
+<a
+  href="https://hawk.exchange"
+  rel="noopener noreferrer"
+  styleName="OasisLogoWrapper"
+>
+  <div
+    styleName="OasisLogo"
+  />
+</a>
+`;
